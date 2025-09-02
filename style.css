@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto Mono", monospace;
+
+  background: linear-gradient(-45deg, #1a1a1a, #2e2e2e, #3a3a3a, #1a1a1a);
+
+  background-size: 400% 400%;
+
+  animation: gradient-animation 15s ease infinite;
+
+  color: #00ff00;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh;
+
+  margin: 0;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.terminal-container {
+  width: 80%;
+
+  max-width: 600px;
+
+  background-color: rgba(46, 46, 46, 0.9); /* Slightly transparent */
+
+  backdrop-filter: blur(5px);
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+
+  padding: 8px;
+
+  background-color: #444;
+
+  border-top-left-radius: 10px;
+
+  border-top-right-radius: 10px;
+
+  gap: 6px;
+}
+
+.dot {
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+.terminal-body {
+  padding: 20px;
+
+  flex-grow: 1;
+}
+
+.terminal-line {
+  white-space: pre-wrap;
+
+  word-break: break-all;
+}
+
+.ascii-art {
+  white-space: pre;
+
+  line-height: 1;
+
+  margin-bottom: 1.5rem;
+
+  text-align: center;
+
+  font-size: 0.7rem; /* Reverted to a smaller, fixed size */
+}
+
+.typing-text-container {
+  display: inline-block;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  vertical-align: middle;
+}
+
+.typing-text {
+  color: #ffff00;
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+
+  50% {
+    border-right-color: #00ff00;
+  }
+}
+
+.copyright {
+  margin-top: 2rem;
+
+  font-size: 0.8rem;
+
+  text-align: center;
+
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .terminal-body {
+    padding: 16px;
+  }
+}
