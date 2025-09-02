@@ -56,8 +56,11 @@
         </p>
         <script src="script.js"></script>
         <div class="copyright">
-          © 2025 Choun Seyha.<br />All Rights Reserved.
+          © <span id="year"></span> Choun Seyha.<br />All Rights Reserved.
         </div>
+        <script>
+          document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
       </div>
     </div>
   </body>
