@@ -21,4 +21,4 @@ Welcome to AMSOfficial.dev, the official portfolio website for AMS. Discover wha
 
 ---
 
-_AMSOfficial.dev – Your gateway to AMS’s professional journey._
+_AMSOfficial.dev – life is a game that money is the points._
